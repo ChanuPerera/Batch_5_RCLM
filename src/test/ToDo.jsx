@@ -44,11 +44,21 @@ const ToDoList = () => {
     }
   }, []);
 
+
+
   ///////// Add todos
   const addTodo = () => {
     if (!newTask.trim()) return;
     setTodos([...todos, { text: newTask, done: false }]);
     setNewTask("");
+
+    // if(!newTask.trim()){
+    //   console.log("no task text yest")
+    //   return;
+    // }else{
+    //   setTodos([...todos, { text: newTask, done: false }]);
+    //   setNewTask("");
+    // }
   };
 
   //////////// save todos to localstorage
@@ -67,6 +77,7 @@ const ToDoList = () => {
     setTodos(todos.filter((_, i) => i !== index));
   };
 
+
   const startEdit = (index) => {
     setEditIndex(index);
     setEditText(todos[index].text);
@@ -79,6 +90,11 @@ const ToDoList = () => {
     setEditIndex(null);
     setEditText("");
   };
+
+
+
+
+  
 
   return (
     <div className="min-h-screen bg-gray-200 flex items-center justify-center p-6">
