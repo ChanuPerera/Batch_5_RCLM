@@ -4,15 +4,16 @@ import ReactFunctional from "./test/ReactFunctional";
 import ToDoList from "./test/ToDo";
 import MapEx from "./test/MapEx";
 import {  ThemeProvider } from "./context/ThemeContext";
+import ContextScope from "./test/ContextScope";
 
 
 const App = () => {
 
-   
+  
 
     return(
     
-<ThemeProvider>
+
 
 
         <div className={`min-h-screen min-w-full `}>
@@ -24,10 +25,11 @@ const App = () => {
 
             {/* <ToDoList/> */}
 
-            <MapEx/>
+            {/* <MapEx/> */}
+            <ContextScope/>
 
         </div>
-</ThemeProvider>
+
 
      
     );
