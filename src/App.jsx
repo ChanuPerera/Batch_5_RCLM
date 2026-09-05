@@ -5,6 +5,7 @@ import ToDoList from "./test/ToDo";
 import MapEx from "./test/MapEx";
 import {  ThemeProvider } from "./context/ThemeContext";
 import ContextScope from "./test/ContextScope";
+import Examples from "./ui/Examples";
 
 
 const App = () => {
@@ -26,7 +27,9 @@ const App = () => {
             {/* <ToDoList/> */}
 
             {/* <MapEx/> */}
-            <ContextScope/>
+            {/* <ContextScope/> */}
+
+            <Examples/>
 
         </div>
 
